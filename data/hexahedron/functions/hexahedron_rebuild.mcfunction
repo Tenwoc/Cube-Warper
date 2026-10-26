@@ -1,6 +1,6 @@
 # Start the hexahedron rebuild process
-tellraw @p {"translate":"hexahedron.message.hexahedron_rebuild.1","bold":true,"color":"gold"}
-tellraw @p {"translate":"hexahedron.message.hexahedron_rebuild.2","color":"yellow"}
+tellraw @p {"translate":"message.hexahedron.hexahedron_rebuild.1","bold":true,"color":"gold"}
+tellraw @p {"translate":"message.hexahedron.hexahedron_rebuild.2","color":"yellow"}
 
 # Force everyone on board
 execute in minecraft:overworld run tp @a 0.5 98 6.5
@@ -42,4 +42,4 @@ execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal com
 
 # Schedule proper landing in the hexahedron_graveyard
 tag @e[tag=core] add pre_runtime
-tellraw @p {"translate":"hexahedron.message.hexahedron_rebuild.3","color":"green"}
+tellraw @p {"translate":"message.hexahedron.hexahedron_rebuild.3","color":"green"}
